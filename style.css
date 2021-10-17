@@ -1,10 +1,18 @@
-/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
-*, ::after, ::before { box-sizing: inherit; }
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 body {
-    text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
 }
 
 /*
@@ -25,3 +33,116 @@ body {
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+
+body {
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: #f5f5f5;
+}
+
+.zbozi {
+  width: 670px;
+  height: 440px;
+  display: flex;
+  margin: 30px auto 0 auto;
+  box-shadow: 0 2px 10px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+}
+.slogan {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 30px 0;
+}
+
+.cena {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: right;
+}
+
+.zaruka {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.cenovka {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+.nazev {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.vizual {
+  background: linear-gradient(180deg, #06d7c1, #50cc49);
+  color: white;
+  padding: 30px;
+  position: relative;
+  width: 50%;
+  border-radius: 30px 0 0 30px;
+}
+
+.bota {
+  position: absolute;
+  right: 0;
+  top: 140px;
+}
+
+.detaily {
+  width: 50%;
+  background-color: white;
+  border-radius: 0 30px 30px 0;
+  padding: 30px;
+  position: relative;
+}
+
+.popis {
+  margin: 30px 0;
+  border-bottom: 1px solid #06d7c1;
+  padding-bottom: 30px;
+}
+
+.velikosti {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.velikosti li {
+  padding: 5px;
+}
+
+.vybrana {
+  color: #f15f42;
+  border: 1px solid #f15f42;
+  border-radius: 50%;
+}
+
+.tlacitko {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  background-color: #f15f42;
+  padding: 15px 35px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.produkt {
+  color: #959595;
+}
+
+.parametr {
+  text-transform: uppercase;
+  font-size: 14px;
+}
